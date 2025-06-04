@@ -5,7 +5,9 @@ export default function SectionFirts() {
   return (
     <section className="container mx-auto px-20 max-md:px-2 py-10">
       <div className="flex flex-col items-center">
-        <Image alt="wed" src="/images/wedd.png" width={400} height={200} />
+        <div className="max-sm:px-12">
+          <Image alt="wed" src="/images/wedd.png" width={400} height={200} />
+        </div>
         <span className="text-white text-2xl text-center font-semibold mt-10">
           THIỆP MỜI THAM DỰ LỄ THÀNH HÔN
         </span>
