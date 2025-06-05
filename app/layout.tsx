@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description: "Wedding Dũng & Nhàn",
     images: [
       {
-        url: `https://card-wedding-dun.vercel.app/images/thumb1.png`,
+        url: `https://card-wedding-dun.vercel.app/images/thumb.jpg`,
         alt: "Hình ảnh",
       },
     ],
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     description: "Wedding Dũng & Nhàn",
     images: [
       {
-        url: `https://card-wedding-dun.vercel.app/images/thumb1.png`,
+        url: `https://card-wedding-dun.vercel.app/images/thumb.jpg`,
         alt: "Hình ảnh",
       },
     ],
