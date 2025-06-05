@@ -1,103 +1,79 @@
-import Image from "next/image";
+"use client";
+import { cn } from "@/lib/utils";
+import { Loader2Icon } from "lucide-react";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+  const router = useRouter();
+  const [name, setName] = useState("");
+  const [isClicked, setIsClicked] = useState(false);
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+  const handleClick = () => {
+    setIsClicked(true);
+
+    setTimeout(() => {
+      router.push(`/card?name=${name}`);
+    }, 1500); // Delay cho animation chạy xong
+  };
+
+  return (
+    <div className="relative h-screen">
+      <div
+        style={{
+          backgroundImage: "url('/images/1.jpeg')",
+        }}
+        className="h-full bg-center bg-cover blur-[4px]"
+      ></div>
+      <div className="absolute left-0 right-0 bottom-0 top-0 mx-auto my-auto px-1">
+        <div className="h-full flex flex-col justify-center items-center">
+          <div
+            style={{ minHeight: "auto" }}
+            className={cn(
+              "relative flex justify-center py-[30px] px-10 max-w-[1000px] w-full backdrop-blur-[15px] rounded-[15px] border-2 border-pink-600/80 shadow-sm max-xl:max-w-[700px] max-md:max-w-[600px] max-[32rem]:max-w-[400px] max-[27rem]:max-w-[350px]"
+            )}
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+            <div className={cn("w-full flex flex-col gap-3 items-center ")}>
+              <span className="font-bold text-white text-3xl text-center max-[32rem]:text-xl max-[27rem]:text-sm">
+                CHÀO MỪNG BẠN ĐẾN VỚI TIỆC CƯỚI CỦA CHÚNG TÔI!
+              </span>
+              <div className="mt-10 max-[27rem]:mt-4 w-[60%] max-[32rem]:w-full">
+                <label
+                  htmlFor="name"
+                  className="block text-lg font-medium text-white text-center italic  max-[32rem]:text-sm max-[27rem]:text-xs"
+                >
+                  Xin hãy cho biết quý danh của bạn
+                </label>
+                <div className="mt-2">
+                  <input
+                    value={name}
+                    onChange={(e) => {
+                      setName(e.target.value);
+                    }}
+                    id="name"
+                    name="name"
+                    type="text"
+                    placeholder=""
+                    className="h-12 block w-full rounded-full bg-transparent px-4 py-1.5 text-base text-white outline outline-1 -outline-offset-1 outline-pink-600 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-pink-600 "
+                  />
+                </div>
+                <button
+                  type="button"
+                  className={cn(
+                    "flex justify-center items-center mt-4 w-full h-12 rounded-full bg-pink-600 px-2.5 py-1 text-xs font-semibold text-white shadow-sm hover:bg-pink-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-600"
+                  )}
+                  onClick={handleClick}
+                >
+                  {isClicked && (
+                    <Loader2Icon className="size-4.5 animate-spin" />
+                  )}
+                  {!isClicked && `OKI!!!!!`}
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
     </div>
   );
 }

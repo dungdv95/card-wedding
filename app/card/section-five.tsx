@@ -1,3 +1,4 @@
+import { Heart } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
@@ -37,7 +38,7 @@ function SectionFive() {
             max-[25rem]:text-[8px] max-[25rem]:top-[107px] max-[25rem]:right-[73px]
             max-[26rem]:text-[8px] max-[26rem]:top-[114px] max-[26rem]:right-[80px]
             max-[24rem]:text-[7px] max-[24rem]:top-[103px] max-[24rem]:right-[70px]
-            max-[23rem]:text-[7px] max-[23rem]:top-[98px] max-[23rem]:right-[70px]"
+            max-[23rem]:text-[7px] max-[23rem]:top-[98px] max-[23rem]:right-[70px] opacity-80"
             >
               {invite ?? ""}
             </span>
@@ -57,7 +58,7 @@ function SectionFive() {
             max-[25rem]:text-[8px] max-[25rem]:top-[39px] max-[25rem]:left-[73px]
             max-[26rem]:text-[8px] max-[26rem]:top-[40px] max-[26rem]:left-[73px]
             max-[24rem]:text-[7px] max-[24rem]:top-[38px] max-[24rem]:left-[68px]
-            max-[23rem]:text-[7px] max-[23rem]:top-[36px] max-[23rem]:right-[68px]"
+            max-[23rem]:text-[7px] max-[23rem]:top-[36px] max-[23rem]:right-[68px] opacity-80"
             >
               {invite ?? ""}
             </span>
@@ -78,6 +79,12 @@ function SectionFive() {
               * xem bản đồ nhà gái
             </Link>
           </div>
+        </div>
+        <div className="mt-6 flex gap-6 items-center justify-center max-lg:gap-4 max-[32rem]:gap-2">
+          <span className="text-[#ffe5ba] text-5xl font-bold font-[Geist] max-lg:text-3xl max-[32rem]:text-lg">
+            FROM DŨNG & NHÀN WITH LOVE
+          </span>
+          <Heart className="size-12 fill-pink-700 stroke-pink-700 max-lg:size-9 max-[32rem]:size-6" />
         </div>
       </div>
     </section>
