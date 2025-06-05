@@ -13,7 +13,29 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://card-wedding-dun.vercel.app"),
   title: "Wedding Dũng & Nhàn",
+  openGraph: {
+    title: "Wedding Dũng & Nhàn",
+    description: "Wedding Dũng & Nhàn",
+    images: [
+      {
+        url: `https://card-wedding-dun.vercel.app/images/thum-wed.jpg?v=${Date.now()}`,
+        alt: "Hình ảnh",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Wedding Dũng & Nhàn",
+    description: "Wedding Dũng & Nhàn",
+    images: [
+      {
+        url: `https://card-wedding-dun.vercel.app/images/thum-wed.jpg?v=${Date.now()}`,
+        alt: "Hình ảnh",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({

@@ -21,9 +21,9 @@ export default function Home() {
     <div className="relative h-screen">
       <div
         style={{
-          backgroundImage: "url('/images/1.jpeg')",
+          backgroundImage: "url('/images/backgr.jpg')",
         }}
-        className="h-full bg-center bg-cover blur-[4px]"
+        className="h-full bg-center bg-cover blur-[5px]"
       ></div>
       <div className="absolute left-0 right-0 bottom-0 top-0 mx-auto my-auto px-1">
         <div className="h-full flex flex-col justify-center items-center">
@@ -34,8 +34,10 @@ export default function Home() {
             )}
           >
             <div className={cn("w-full flex flex-col gap-3 items-center ")}>
-              <span className="font-bold text-white text-3xl text-center max-[32rem]:text-xl max-[27rem]:text-sm">
-                CHÀO MỪNG BẠN ĐẾN VỚI TIỆC CƯỚI CỦA CHÚNG TÔI!
+              <span className="tracking-wider font-bold text-white text-3xl text-center max-[32rem]:text-xl max-[27rem]:text-sm">
+                CHÀO MỪNG BẠN ĐẾN VỚI LỄ CƯỚI CỦA{" "}
+                <span className="italic text-green-600">DŨNG</span> &{" "}
+                <span className="italic text-pink-600 ">NHÀN</span>
               </span>
               <div className="mt-10 max-[27rem]:mt-4 w-[60%] max-[32rem]:w-full">
                 <label
