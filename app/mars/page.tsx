@@ -7,7 +7,7 @@ import FivePage from "./section-five";
 import SectionFour from "./section-four";
 import SectionThree from "./section-three";
 import SectionTwo from "./section-two";
-import { ArrowDown, ArrowUp, Mail, QrCode } from "lucide-react";
+import { ArrowDown, ArrowUp, Heart, Mail, QrCode } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import {
   Dialog,
@@ -96,7 +96,7 @@ export default function Page() {
               <Button
                 variant="outline"
                 size="icon"
-                className="cursor-pointer size-8 rounded-full bg-pink-600 border-pink-600 hover:bg-pink-600/80 text-white hover:text-white"
+                className="opacity-80 cursor-pointer size-8 rounded-full bg-pink-600 border-pink-600 hover:bg-pink-600/80 text-white hover:text-white"
                 onClick={handleOpenMess}
               >
                 <Mail />
@@ -104,7 +104,7 @@ export default function Page() {
               <Button
                 variant="outline"
                 size="icon"
-                className="cursor-pointer size-8 rounded-full bg-blue-600 border-blue-600 hover:bg-blue-600/80 text-white hover:text-white"
+                className="opacity-80 cursor-pointer size-8 rounded-full bg-blue-600 border-blue-600 hover:bg-blue-600/80 text-white hover:text-white"
                 onClick={() => setOpenQr(true)}
               >
                 <QrCode />
@@ -114,10 +114,25 @@ export default function Page() {
         </div>
       </div>
       <Dialog open={openQr} onOpenChange={setOpenQr}>
-        <DialogContent className="">
-          <DialogHeader className="hidden">
+        <DialogContent className="gap-0">
+          <DialogHeader className="gap-0">
             <DialogTitle></DialogTitle>
-            <DialogDescription></DialogDescription>
+            <DialogDescription className="flex flex-col gap-0.5">
+              <div className="flex justify-center gap-0.5">
+                <Heart className="size-3 fill-pink-600 stroke-pink-600" />
+                <Heart className="size-3 fill-pink-600 stroke-pink-600" />
+                <Heart className="size-3 fill-pink-600 stroke-pink-600" />
+                <Heart className="size-3 fill-pink-600 stroke-pink-600" />
+                <Heart className="size-3 fill-pink-600 stroke-pink-600" />
+                <Heart className="size-3 fill-pink-600 stroke-pink-600" />
+                <Heart className="size-3 fill-pink-600 stroke-pink-600" />
+                <Heart className="size-3 fill-pink-600 stroke-pink-600" />
+              </div>
+              <span className="italic text-sm text-pink-600">
+                Mọi lời chúc và sự yêu thương cùng những món quà ý nghĩa từ nơi
+                phương xa xin gửi về
+              </span>
+            </DialogDescription>
           </DialogHeader>
           <div>
             <img alt="" src="images/my-qr.jpg" />

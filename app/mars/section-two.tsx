@@ -9,6 +9,7 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 const listVideo = [
   "https://www.youtube.com/embed/RmGpAZLAcsA",
@@ -54,7 +55,16 @@ export default function SectionTwo() {
         }}
         className="flex flex-col items-center"
       >
-        <Carousel opts={{ align: "start" }} className="w-full" setApi={setApi}>
+        <Carousel
+          opts={{ align: "start", loop: true }}
+          plugins={[
+            Autoplay({
+              delay: 2000,
+            }),
+          ]}
+          className="w-full"
+          setApi={setApi}
+        >
           <CarouselContent>
             {Array.from({ length: 6 }).map((_, index) => (
               <CarouselItem key={index}>

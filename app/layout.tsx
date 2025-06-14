@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title: "Wedding Dũng & Nhàn",
   openGraph: {
     title: "Wedding Dũng & Nhàn",
-    description: "Wedding Dũng & Nhàn",
+    description: "Đây là thiệp mời đám cưới của Dũng & Nhàn!",
     images: [
       {
         url: `https://card-wedding-dun.vercel.app/images/thumb.jpg`,
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Wedding Dũng & Nhàn",
-    description: "Wedding Dũng & Nhàn",
+    description: "Đây là thiệp mời đám cưới của Dũng & Nhàn!",
     images: [
       {
         url: `https://card-wedding-dun.vercel.app/images/thumb.jpg`,
