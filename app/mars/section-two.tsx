@@ -90,7 +90,16 @@ export default function SectionTwo() {
       </div> */}
 
       <div className="mt-10 flex gap-12 max-md:flex-col">
-        <div className="relative">
+        <motion.div
+          initial={{ opacity: 0.0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.3,
+            duration: 0.5,
+            ease: "easeInOut",
+          }}
+          className="relative"
+        >
           <Image
             alt=""
             src="/images/4.jpeg"
@@ -105,21 +114,57 @@ export default function SectionTwo() {
             height={600}
             className="absolute rounded-md bottom-[-20px] right-[-250px] max-lg:w-[190px] max-lg:right-[-150px] max-md:right-4 max-md:bottom-[-40px]"
           />
-        </div>
+        </motion.div>
+
         <div className="flex flex-col gap-4">
-          <span className="text-[#ffe5ba] text-3xl font-bold">
+          <motion.span
+            initial={{ opacity: 0.0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.3,
+              duration: 0.5,
+              ease: "easeInOut",
+            }}
+            className="text-[#ffe5ba] text-3xl font-bold"
+          >
             You Had Me At Hello!
-          </span>
-          <div className="w-24">
+          </motion.span>
+
+          <motion.div
+            initial={{ opacity: 0.0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.3,
+              duration: 0.5,
+              ease: "easeInOut",
+            }}
+            className="w-24"
+          >
             <Separator className="my-0 bg-[#ffe5ba] !h-0.5" />
-          </div>
-          <span className="text-white text-base max-w-[350px]">
-            {`"Trong tất cả các chiến dịch marketing anh đã triển khai, cưới được
-            em là chiến dịch thành công nhất"`}
-          </span>
-          <span className="text-white text-base max-w-[350px]">
-            {`"Em hiểu "hôn nhân" là hành trình đầy bug, em nguyện cùng anh log & fix mỗi ngày"`}
-          </span>
+          </motion.div>
+
+          <motion.span
+            initial={{ opacity: 0.0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.3,
+              duration: 0.5,
+              ease: "easeInOut",
+            }}
+            className="text-white text-base max-w-[350px]"
+          >{`"Trong tất cả các chiến dịch marketing anh đã triển khai, cưới được
+            em là chiến dịch thành công nhất"`}</motion.span>
+
+          <motion.span
+            initial={{ opacity: 0.0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.3,
+              duration: 0.5,
+              ease: "easeInOut",
+            }}
+            className="text-white text-base max-w-[350px]"
+          >{`"Em hiểu "hôn nhân" là hành trình đầy bug, em nguyện cùng anh log & fix mỗi ngày"`}</motion.span>
         </div>
       </div>
     </section>
