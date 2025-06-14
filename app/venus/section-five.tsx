@@ -1,16 +1,9 @@
 import { Heart } from "lucide-react";
+import { motion } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import { Suspense, useState } from "react";
-import { motion } from "motion/react";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog";
+import { Suspense } from "react";
 
 export default function FivePage() {
   return (
@@ -22,7 +15,6 @@ export default function FivePage() {
 
 function SectionFive() {
   const invite = useSearchParams().get("name");
-  const [openQr, setOpenQr] = useState(false);
 
   console.log("invite", invite);
   return (
@@ -162,17 +154,6 @@ function SectionFive() {
           <Heart className="size-12 fill-pink-700 stroke-pink-700 max-lg:size-9 max-[32rem]:size-6" />
         </motion.div>
       </div>
-      <Dialog open={openQr} onOpenChange={setOpenQr}>
-        <DialogContent className="">
-          <DialogHeader className="hidden">
-            <DialogTitle></DialogTitle>
-            <DialogDescription></DialogDescription>
-          </DialogHeader>
-          <div>
-            <img alt="" src="images/my-qr.jpg" />
-          </div>
-        </DialogContent>
-      </Dialog>
     </section>
   );
 }

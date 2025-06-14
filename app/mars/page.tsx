@@ -7,13 +7,21 @@ import FivePage from "./section-five";
 import SectionFour from "./section-four";
 import SectionThree from "./section-three";
 import SectionTwo from "./section-two";
-import { ArrowDown, ArrowUp, Mail } from "lucide-react";
+import { ArrowDown, ArrowUp, Mail, QrCode } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 
 export default function Page() {
   const [isTop, setIsTop] = useState(true);
   const scrollRef = useRef<HTMLDivElement>(null);
   //   const name = useSearchParams().get("name");
+  const [openQr, setOpenQr] = useState(false);
 
   const handleClickScroll = () => {
     if (scrollRef.current) {
@@ -61,38 +69,61 @@ export default function Page() {
   };
 
   return (
-    <div className="h-dvh w-screen relative overflow-hidden">
-      <div className="absolute inset-0 bg-[url('/images/background.jpg')] bg-cover bg-no-repeat bg-center brightness-50 top-0"></div>
-      <div
-        ref={scrollRef}
-        className="h-full relative z-10 overflow-y-auto scrollbar-hide"
-      >
-        <SectionFirts />
-        <SectionTwo />
-        <SectionThree />
-        <SectionFour />
-        <FivePage />
-        <div className="fixed bottom-3 right-5">
-          <Button
-            variant="outline"
-            size="icon"
-            className="cursor-pointer size-8 rounded-full bg-green-600 border-green-600 hover:bg-green-600/80 text-white hover:text-white"
-            onClick={handleClickScroll}
-          >
-            {isTop ? <ArrowDown /> : <ArrowUp />}
-          </Button>
-        </div>
-        <div className="fixed bottom-3 left-5">
-          <Button
-            variant="outline"
-            size="icon"
-            className="cursor-pointer size-8 rounded-full bg-pink-600 border-pink-600 hover:bg-pink-600/80 text-white hover:text-white"
-            onClick={handleOpenMess}
-          >
-            <Mail />
-          </Button>
+    <>
+      <div className="h-dvh w-screen relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('/images/background.jpg')] bg-cover bg-no-repeat bg-center brightness-50 top-0"></div>
+        <div
+          ref={scrollRef}
+          className="h-full relative z-10 overflow-y-auto scrollbar-hide"
+        >
+          <SectionFirts />
+          <SectionTwo />
+          <SectionThree />
+          <SectionFour />
+          <FivePage />
+          <div className="fixed bottom-3 right-5">
+            <Button
+              variant="outline"
+              size="icon"
+              className="cursor-pointer size-8 rounded-full bg-green-600 border-green-600 hover:bg-green-600/80 text-white hover:text-white"
+              onClick={handleClickScroll}
+            >
+              {isTop ? <ArrowDown /> : <ArrowUp />}
+            </Button>
+          </div>
+          <div className="fixed bottom-3 left-5">
+            <div className="flex gap-3 items-center">
+              <Button
+                variant="outline"
+                size="icon"
+                className="cursor-pointer size-8 rounded-full bg-pink-600 border-pink-600 hover:bg-pink-600/80 text-white hover:text-white"
+                onClick={handleOpenMess}
+              >
+                <Mail />
+              </Button>
+              <Button
+                variant="outline"
+                size="icon"
+                className="cursor-pointer size-8 rounded-full bg-blue-600 border-blue-600 hover:bg-blue-600/80 text-white hover:text-white"
+                onClick={() => setOpenQr(true)}
+              >
+                <QrCode />
+              </Button>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+      <Dialog open={openQr} onOpenChange={setOpenQr}>
+        <DialogContent className="">
+          <DialogHeader className="hidden">
+            <DialogTitle></DialogTitle>
+            <DialogDescription></DialogDescription>
+          </DialogHeader>
+          <div>
+            <img alt="" src="images/my-qr.jpg" />
+          </div>
+        </DialogContent>
+      </Dialog>
+    </>
   );
 }
