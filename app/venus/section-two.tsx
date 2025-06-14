@@ -9,7 +9,7 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
+import { cn } from "@/lib/utils";
 
 const listVideo = [
   "https://www.youtube.com/embed/RmGpAZLAcsA",
@@ -57,11 +57,6 @@ export default function SectionTwo() {
       >
         <Carousel
           opts={{ align: "start", loop: true }}
-          plugins={[
-            Autoplay({
-              delay: 2000,
-            }),
-          ]}
           className="w-full"
           setApi={setApi}
         >
@@ -81,14 +76,15 @@ export default function SectionTwo() {
           {Array.from({ length: count }).map((_, index) => (
             <Button
               key={index}
-              variant="ghost" // Sử dụng variant ghost hoặc icon cho nút chấm
-              size="icon"
-              className={`h-2 rounded-full p-0 transition-colors duration-200 ${
-                index === current - 1 ? "bg-[#005FEB] w-4" : "bg-[#A7ABC3] w-2"
-              }`}
+              variant={"destructive"}
+              className={cn(
+                "h-6 w-6 text-xs rounded-full p-0",
+                index === current - 1 ? "bg-[#005FEB]" : "bg-[#A7ABC3]"
+              )}
               onClick={() => api?.scrollTo(index)}
-              aria-label={`Go to slide ${index + 1}`}
-            />
+            >
+              {index + 1}
+            </Button>
           ))}
         </div>
       </motion.div>
