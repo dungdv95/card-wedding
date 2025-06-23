@@ -1,6 +1,7 @@
 import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
 import { motion } from "motion/react";
+import CountDown from "../mars/count-down";
 
 export default function SectionFirts() {
   return (
@@ -118,6 +119,17 @@ export default function SectionFirts() {
           >
             14.07.2025
           </motion.span>
+          <motion.div
+            initial={{ opacity: 0.0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.3,
+              duration: 0.5,
+              ease: "easeInOut",
+            }}
+          >
+            <CountDown />
+          </motion.div>
         </div>
       </div>
     </section>

@@ -115,9 +115,12 @@ export default function Page() {
       </div>
       <Dialog open={openQr} onOpenChange={setOpenQr}>
         <DialogContent className="gap-0">
-          <DialogHeader className="gap-0">
+          <DialogHeader className="hidden">
             <DialogTitle></DialogTitle>
-            <DialogDescription className="flex flex-col gap-0.5">
+            <DialogDescription className="flex flex-col gap-0.5"></DialogDescription>
+          </DialogHeader>
+          <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-0.5">
               <div className="flex justify-center gap-0.5">
                 <Heart className="size-3 fill-pink-600 stroke-pink-600" />
                 <Heart className="size-3 fill-pink-600 stroke-pink-600" />
@@ -128,13 +131,11 @@ export default function Page() {
                 <Heart className="size-3 fill-pink-600 stroke-pink-600" />
                 <Heart className="size-3 fill-pink-600 stroke-pink-600" />
               </div>
-              <span className="italic text-sm text-pink-600">
+              <span className="italic text-sm text-pink-600 text-center">
                 Mọi lời chúc và sự yêu thương cùng những món quà ý nghĩa từ nơi
                 phương xa xin gửi về
               </span>
-            </DialogDescription>
-          </DialogHeader>
-          <div>
+            </div>
             <img alt="" src="images/my-qr.jpg" />
           </div>
         </DialogContent>

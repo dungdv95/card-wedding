@@ -17,7 +17,7 @@ export default function SectionFour() {
         >
           <Image
             alt="wed"
-            src="/images/8.jpeg"
+            src="https://drive.google.com/uc?export=view&id=1oegzkWzfo-VpvEZqZ3IXJNvN5JyQWtX5"
             width={1000}
             height={1000}
             className="w-full h-full object-cover rounded-xl"
@@ -25,7 +25,7 @@ export default function SectionFour() {
         </motion.div>
 
         <div className="col-span-7 flex flex-col gap-7 max-lg:col-span-12">
-          <div className="h-[600px] flex justify-between gap-6 max-lg:h-[350px] max-md:h-[220px]">
+          <div className="h-[600px] flex justify-between gap-6 max-lg:h-[350px] max-md:h-[280px]">
             <motion.div
               initial={{ opacity: 0.0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -37,7 +37,7 @@ export default function SectionFour() {
             >
               <Image
                 alt="wed"
-                src="/images/8.jpeg"
+                src="https://drive.google.com/uc?export=view&id=1rAttRP167DEvjACGtDbzrP7qUEVuexMM"
                 width={1000}
                 height={1000}
                 className="w-full h-full object-cover rounded-xl"
@@ -54,7 +54,7 @@ export default function SectionFour() {
             >
               <Image
                 alt="wed"
-                src="/images/8.jpeg"
+                src="https://drive.google.com/uc?export=view&id=1KUKcwkUlPrb8upomM3b7onJIxzahetLr"
                 width={1000}
                 height={1000}
                 className="w-full h-full object-cover rounded-xl"
@@ -73,7 +73,7 @@ export default function SectionFour() {
           >
             <Image
               alt="wed"
-              src="/images/8.jpeg"
+              src="https://drive.google.com/uc?export=view&id=1bJBkx7np5I1uJ8pJPaKaX1ccwlxVQ-9y"
               width={1000}
               height={1000}
               className="w-full h-full object-cover rounded-xl"
@@ -89,11 +89,11 @@ export default function SectionFour() {
               duration: 0.5,
               ease: "easeInOut",
             }}
-            className="h-[430px] max-md:h-[370px]"
+            className="h-[800px] max-md:h-[370px]"
           >
             <Image
               alt="wed"
-              src="/images/change.jpeg"
+              src="https://drive.google.com/uc?export=view&id=1CkOr5Ml3AnBRFcTvxg1Ckeq1mgk27m8J"
               width={1000}
               height={1000}
               className="w-full h-full object-cover rounded-xl"
@@ -113,7 +113,7 @@ export default function SectionFour() {
           >
             <Image
               alt="wed"
-              src="/images/change.jpeg"
+              src="https://drive.google.com/uc?export=view&id=1h9wbif2e6td-vhDYqBd7JXRxk8tN4qr_"
               width={1000}
               height={1000}
               className="w-full h-full object-cover rounded-xl"
@@ -133,14 +133,14 @@ export default function SectionFour() {
           >
             <Image
               alt="wed"
-              src="/images/change.jpeg"
+              src="https://drive.google.com/uc?export=view&id=1h9wbif2e6td-vhDYqBd7JXRxk8tN4qr_"
               width={1000}
               height={1000}
               className="w-full h-full object-cover rounded-xl"
             />
           </motion.div>
         </div>
-        <div className="col-span-6 max-lg:col-span-12">
+        <div className="col-span-12">
           <div className="flex flex-col gap-5">
             <motion.div
               initial={{ opacity: 0.0, y: 40 }}
@@ -150,76 +150,17 @@ export default function SectionFour() {
                 duration: 0.5,
                 ease: "easeInOut",
               }}
-              className="h-[350px] max-md:h-[280px]"
+              className="h-[570px] max-md:h-[280px]"
             >
               <Image
                 alt="wed"
-                src="/images/change.jpeg"
-                width={1000}
-                height={1000}
-                className="w-full h-full object-cover rounded-xl"
-              />
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0.0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{
-                delay: 0.3,
-                duration: 0.5,
-                ease: "easeInOut",
-              }}
-              className="h-[650px] max-lg:h-[450px] max-md:h-[280px]"
-            >
-              <Image
-                alt="wed"
-                src="/images/change.jpeg"
+                src="https://drive.google.com/uc?export=view&id=1cLIz-dgzDw71W3KMCcbhyGnGckpuM2TE"
                 width={1000}
                 height={1000}
                 className="w-full h-full object-cover rounded-xl"
               />
             </motion.div>
           </div>
-        </div>
-        <div className="col-span-6 max-lg:col-span-12">
-          <motion.div
-            initial={{ opacity: 0.0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{
-              delay: 0.3,
-              duration: 0.5,
-              ease: "easeInOut",
-            }}
-            className="h-[1020px] max-lg:h-[600px] max-md:h-[300px]"
-          >
-            <Image
-              alt="wed"
-              src="/images/change.jpeg"
-              width={1000}
-              height={1000}
-              className="w-full h-full object-cover rounded-xl"
-            />
-          </motion.div>
-        </div>
-        <div className="col-span-12">
-          <motion.div
-            initial={{ opacity: 0.0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{
-              delay: 0.3,
-              duration: 0.5,
-              ease: "easeInOut",
-            }}
-            className="h-[700px] max-lg:h-[400px] max-md:h-[250px]"
-          >
-            <Image
-              alt="wed"
-              src="/images/change.jpeg"
-              width={1000}
-              height={1000}
-              className="w-full h-full object-cover rounded-xl"
-            />
-          </motion.div>
         </div>
       </div>
     </section>

@@ -64,7 +64,7 @@ export default function SectionTwo() {
             {Array.from({ length: 6 }).map((_, index) => (
               <CarouselItem key={index}>
                 <iframe
-                  className="aspect-video w-full"
+                  className="aspect-video w-full rounded-sm"
                   src={listVideo[index]}
                 ></iframe>
               </CarouselItem>
@@ -108,14 +108,14 @@ export default function SectionTwo() {
         >
           <Image
             alt=""
-            src="/images/4.jpeg"
+            src="/images/anhcuoi1.jpg"
             width={500}
             height={600}
             className="rounded-md"
           />
           <Image
             alt=""
-            src="/images/belive.jpeg"
+            src="https://drive.google.com/uc?export=view&id=1NsZihDzCnQHQgVPgNbfrJRam28eYrNCI"
             width={300}
             height={600}
             className="absolute rounded-md bottom-[-20px] right-[-250px] max-lg:w-[190px] max-lg:right-[-150px] max-md:right-4 max-md:bottom-[-40px]"

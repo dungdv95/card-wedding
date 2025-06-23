@@ -37,7 +37,11 @@ export default function SectionThree() {
             className="max-lg:absolute top-24 right-[-140px] max-md:right-0 max-md:top-14"
           >
             <Avatar className="size-[260px] max-md:size-[160px]">
-              <AvatarImage src="/images/1.jpeg" alt="a1" />
+              <AvatarImage
+                src="/images/anhcuoi4.jpg"
+                alt="a1"
+                className="object-cover"
+              />
               <AvatarFallback>A</AvatarFallback>
             </Avatar>
           </motion.div>
@@ -54,7 +58,11 @@ export default function SectionThree() {
               className="relative"
             >
               <Avatar className="size-[430px] max-md:size-[280px] brightness-50 sepia-50">
-                <AvatarImage src="/images/2.jpeg" alt="a1" />
+                <AvatarImage
+                  src="/images/anhcuoi3.jpg"
+                  alt="a1"
+                  className="object-cover"
+                />
                 <AvatarFallback>A</AvatarFallback>
               </Avatar>
               <span className="absolute left-18 bottom-9 text-white w-72 text-xs text-center font-medium max-md:text-[10px] max-md:w-56 max-md:left-7">
@@ -75,41 +83,23 @@ export default function SectionThree() {
             className="flex flex-col gap-36 max-lg:flex-row max-lg:gap-20 max-lg:mt-6 max-md:justify-center"
           >
             <Avatar className="size-[230px]">
-              <AvatarImage src="/images/3.jpeg" alt="a1" />
+              <AvatarImage
+                src="/images/anhcuoi5.jpg"
+                alt="a1"
+                className="object-cover"
+              />
               <AvatarFallback>A</AvatarFallback>
             </Avatar>
             <Avatar className="size-[200px] max-md:hidden">
-              <AvatarImage src="/images/5.jpeg" alt="a1" />
+              <AvatarImage
+                src="/images/anhcuoi9.jpg"
+                alt="a1"
+                className="object-cover"
+              />
               <AvatarFallback>A</AvatarFallback>
             </Avatar>
           </motion.div>
         </div>
-        {/* <div className="relative">
-          <div className="absolute top-0 left-4">
-            <Avatar className="size-[260px]">
-              <AvatarImage src="/images/1.jpeg" alt="a1" />
-              <AvatarFallback>A</AvatarFallback>
-            </Avatar>
-          </div>
-          <div className="absolute top-28 left-72">
-            <Avatar className="size-[430px]">
-              <AvatarImage src="/images/2.jpeg" alt="a1" />
-              <AvatarFallback>A</AvatarFallback>
-            </Avatar>
-          </div>
-          <div className="absolute top-5 right-32">
-            <Avatar className="size-[230px]">
-              <AvatarImage src="/images/3.jpeg" alt="a1" />
-              <AvatarFallback>A</AvatarFallback>
-            </Avatar>
-          </div>
-          <div className="absolute top-[350px] right-32">
-            <Avatar className="size-[200px]">
-              <AvatarImage src="/images/5.jpeg" alt="a1" />
-              <AvatarFallback>A</AvatarFallback>
-            </Avatar>
-          </div>
-        </div> */}
       </div>
     </section>
   );

@@ -47,7 +47,7 @@ function SectionFive() {
           >
             <Image
               alt="wed"
-              src="/images/cardfont.png"
+              src="https://drive.google.com/uc?export=view&id=1vTW83y6NXdvmb1Bz-63JzW8yLHeP5PCp"
               width={1000}
               height={1000}
               className="w-full h-full object-cover rounded-xl"
@@ -77,7 +77,7 @@ function SectionFive() {
           >
             <Image
               alt="wed"
-              src="/images/cardback.png"
+              src="https://drive.google.com/uc?export=view&id=1gbGlZ_uBd4Dc7PAXf12q3g85nSX-aOVe"
               width={1000}
               height={1000}
               className="mt-3 w-full h-full object-cover rounded-xl"
