@@ -77,7 +77,7 @@ function SectionFive() {
           >
             <Image
               alt="wed"
-              src="https://drive.google.com/uc?export=view&id=1ys5X34xjvG6o0o4HLuL_JDg_aqVHc6Ef"
+              src="https://drive.google.com/uc?export=view&id=1gu6gr88_SFSiNKehWKFUv6Gwl_nNmru2"
               width={1000}
               height={1000}
               className="mt-3 w-full h-full object-cover rounded-xl"
