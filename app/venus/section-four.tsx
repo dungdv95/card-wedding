@@ -133,7 +133,7 @@ export default function SectionFour() {
           >
             <Image
               alt="wed"
-              src="https://drive.google.com/uc?export=view&id=1h9wbif2e6td-vhDYqBd7JXRxk8tN4qr_"
+              src="https://drive.google.com/uc?export=view&id=1AslUpPESXoTaNDnTdP2rPF93aOT52ram"
               width={1000}
               height={1000}
               className="w-full h-full object-cover rounded-xl"

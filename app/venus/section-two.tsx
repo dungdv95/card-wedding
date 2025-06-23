@@ -108,7 +108,7 @@ export default function SectionTwo() {
         >
           <Image
             alt=""
-            src="/images/anhcuoi1.jpg"
+            src="https://drive.google.com/uc?export=view&id=1jGBEp5Sg0L7MH82xp4SiEtbvwMTsqiOb"
             width={500}
             height={600}
             className="rounded-md"
