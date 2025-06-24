@@ -15,9 +15,12 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://card-wedding-dun.vercel.app"),
   title: "Wedding Dũng & Nhàn",
+  description:
+    "Đây là thiệp mời đám cưới của Dũng & Nhàn!\n Nhấp vào link để tham gia!",
   openGraph: {
     title: "Wedding Dũng & Nhàn",
-    description: "Đây là thiệp mời đám cưới của Dũng & Nhàn!",
+    description:
+      "Đây là thiệp mời đám cưới của Dũng & Nhàn!\n Nhấp vào link để tham gia!",
     images: [
       {
         url: `https://card-wedding-dun.vercel.app/images/thumb.jpg`,
@@ -28,7 +31,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Wedding Dũng & Nhàn",
-    description: "Đây là thiệp mời đám cưới của Dũng & Nhàn!",
+    description:
+      "Đây là thiệp mời đám cưới của Dũng & Nhàn!\n Nhấp vào link để tham gia!",
     images: [
       {
         url: `https://card-wedding-dun.vercel.app/images/thumb.jpg`,
