@@ -12,6 +12,7 @@ import {
 import { cn } from "@/lib/utils";
 
 const listVideo = [
+  "https://www.youtube.com/embed/SSKnHPJXjUQ",
   "https://www.youtube.com/embed/RmGpAZLAcsA",
   "https://www.youtube.com/embed/7sACabGJ6qk",
   "https://www.youtube.com/embed/zQWaMYTQTCw",

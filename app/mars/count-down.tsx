@@ -56,32 +56,68 @@ export default function CountDown() {
 
   return (
     <div className="mt-4 grid grid-cols-4 gap-4">
-      <div className="text-center p-6 bg-gradient-to-br from-red-500 to-pink-500 rounded-xl text-white shadow-lg transform hover:scale-105 transition-transform">
-        <div className="text-2xl md:text-3xl font-bold mb-2">
-          {timeLeft.days.toString().padStart(2, "0")}
+      <div className="group relative">
+        <div className="absolute -inset-1 bg-gradient-to-r from-red-600 to-pink-600 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+        <div className="relative text-center p-8 bg-gradient-to-br from-red-500 via-red-600 to-pink-600 rounded-2xl text-white shadow-2xl transform hover:scale-105 transition-all duration-300">
+          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-white/10 to-transparent rounded-2xl"></div>
+          <div className="relative z-10">
+            <div className="text-2xl md:text-3xl font-black font-mono tracking-tight drop-shadow-lg">
+              {timeLeft.days.toString().padStart(2, "0")}
+            </div>
+            <div className="text-xs md:text-sm font-bold opacity-90 tracking-widest">
+              NGÀY
+            </div>
+            <div className="absolute -top-2 -right-2 w-4 h-4 bg-white/20 rounded-full animate-pulse"></div>
+          </div>
         </div>
-        <div className="text-sm md:text-base font-medium opacity-90">NGÀY</div>
       </div>
 
-      <div className="text-center p-6 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-xl text-white shadow-lg transform hover:scale-105 transition-transform">
-        <div className="text-2xl md:text-3xl font-bold mb-2">
-          {timeLeft.hours.toString().padStart(2, "0")}
+      <div className="group relative">
+        <div className="absolute -inset-1 bg-gradient-to-r from-orange-600 to-yellow-600 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+        <div className="relative text-center p-8 bg-gradient-to-br from-orange-500 via-orange-600 to-yellow-500 rounded-2xl text-white shadow-2xl transform hover:scale-105 transition-all duration-300">
+          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-white/10 to-transparent rounded-2xl"></div>
+          <div className="relative z-10">
+            <div className="text-2xl md:text-3xl font-black font-mono tracking-tight drop-shadow-lg">
+              {timeLeft.hours.toString().padStart(2, "0")}
+            </div>
+            <div className="text-xs md:text-sm font-bold opacity-90 tracking-widest">
+              GIỜ
+            </div>
+            <div className="absolute -top-2 -right-2 w-4 h-4 bg-white/20 rounded-full animate-pulse delay-100"></div>
+          </div>
         </div>
-        <div className="text-sm md:text-base font-medium opacity-90">GIỜ</div>
       </div>
 
-      <div className="text-center p-6 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl text-white shadow-lg transform hover:scale-105 transition-transform">
-        <div className="text-2xl md:text-3xl font-bold mb-2">
-          {timeLeft.minutes.toString().padStart(2, "0")}
+      <div className="group relative">
+        <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+        <div className="relative text-center p-8 bg-gradient-to-br from-blue-500 via-blue-600 to-cyan-500 rounded-2xl text-white shadow-2xl transform hover:scale-105 transition-all duration-300">
+          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-white/10 to-transparent rounded-2xl"></div>
+          <div className="relative z-10">
+            <div className="text-2xl md:text-3xl font-black font-mono tracking-tight drop-shadow-lg">
+              {timeLeft.minutes.toString().padStart(2, "0")}
+            </div>
+            <div className="text-xs md:text-sm font-bold opacity-90 tracking-widest">
+              PHÚT
+            </div>
+            <div className="absolute -top-2 -right-2 w-4 h-4 bg-white/20 rounded-full animate-pulse delay-200"></div>
+          </div>
         </div>
-        <div className="text-sm md:text-base font-medium opacity-90">PHÚT</div>
       </div>
 
-      <div className="text-center p-6 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-xl text-white shadow-lg transform hover:scale-105 transition-transform">
-        <div className="text-2xl md:text-3xl font-bold mb-2">
-          {timeLeft.seconds.toString().padStart(2, "0")}
+      <div className="group relative">
+        <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+        <div className="relative text-center p-8 bg-gradient-to-br from-purple-500 via-purple-600 to-indigo-600 rounded-2xl text-white shadow-2xl transform hover:scale-105 transition-all duration-300">
+          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-white/10 to-transparent rounded-2xl"></div>
+          <div className="relative z-10">
+            <div className="text-2xl md:text-3xl font-black font-mono tracking-tight drop-shadow-lg animate-pulse">
+              {timeLeft.seconds.toString().padStart(2, "0")}
+            </div>
+            <div className="text-xs md:text-sm font-bold opacity-90 tracking-widest">
+              GIÂY
+            </div>
+            <div className="absolute -top-2 -right-2 w-4 h-4 bg-white/20 rounded-full animate-pulse delay-300"></div>
+          </div>
         </div>
-        <div className="text-sm md:text-base font-medium opacity-90">GIÂY</div>
       </div>
     </div>
   );
