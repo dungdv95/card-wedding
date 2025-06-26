@@ -12,7 +12,7 @@ import {
 import { cn } from "@/lib/utils";
 
 const listVideo = [
-  "https://www.youtube.com/embed/SSKnHPJXjUQ",
+  "https://www.youtube.com/embed/hwpYy_SFt3I",
   "https://www.youtube.com/embed/RmGpAZLAcsA",
   "https://www.youtube.com/embed/7sACabGJ6qk",
   "https://www.youtube.com/embed/zQWaMYTQTCw",
@@ -62,7 +62,7 @@ export default function SectionTwo() {
           setApi={setApi}
         >
           <CarouselContent>
-            {Array.from({ length: 6 }).map((_, index) => (
+            {Array.from({ length: 5 }).map((_, index) => (
               <CarouselItem key={index}>
                 <iframe
                   className="aspect-video w-full rounded-sm"

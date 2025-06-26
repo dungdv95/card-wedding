@@ -16,6 +16,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
+import AudioPage from "../mars/audio-page";
 
 export default function Page() {
   const [isTop, setIsTop] = useState(true);
@@ -70,6 +71,7 @@ export default function Page() {
 
   return (
     <>
+      <AudioPage />
       <div className="h-dvh w-screen relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/images/background.jpg')] bg-cover bg-no-repeat bg-center brightness-50 top-0"></div>
         <div
