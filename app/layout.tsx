@@ -16,11 +16,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://card-wedding-dun.vercel.app"),
   title: "Wedding Dũng & Nhàn",
   description:
-    "Đây là thiệp mời đám cưới của Dũng & Nhàn!\n Nhấp vào link để tham gia!",
+    "Đây là thiệp mời đám cưới của Dũng & Nhàn!\n Nhấp vào link để xem chi tiết!",
   openGraph: {
     title: "Wedding Dũng & Nhàn",
     description:
-      "Đây là thiệp mời đám cưới của Dũng & Nhàn!\n Nhấp vào link để tham gia!",
+      "Đây là thiệp mời đám cưới của Dũng & Nhàn!\n Nhấp vào link để xem chi tiết!",
     images: [
       {
         url: `https://card-wedding-dun.vercel.app/images/thumb.jpg`,
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Wedding Dũng & Nhàn",
     description:
-      "Đây là thiệp mời đám cưới của Dũng & Nhàn!\n Nhấp vào link để tham gia!",
+      "Đây là thiệp mời đám cưới của Dũng & Nhàn!\n Nhấp vào link để xem chi tiết!",
     images: [
       {
         url: `https://card-wedding-dun.vercel.app/images/thumb.jpg`,
