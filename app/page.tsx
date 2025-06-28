@@ -35,16 +35,16 @@ export default function Home() {
     <div className="relative h-screen">
       <div
         style={{
-          backgroundImage: "url('/images/backgr.jpg')",
+          backgroundImage: "url('/images/bgr.jpg')",
         }}
-        className="h-full bg-center bg-cover blur-[5px]"
+        className="h-full bg-center bg-cover blur-[1px] brightness-50 "
       ></div>
       <div className="absolute left-0 right-0 bottom-0 top-0 mx-auto my-auto px-1">
         <div className="h-full flex flex-col justify-center items-center">
           <div
             style={{ minHeight: "auto" }}
             className={cn(
-              "relative flex justify-center py-[30px] px-10 max-w-[1000px] w-full backdrop-blur-[15px] rounded-[15px] border-2 border-pink-600/80 shadow-sm max-xl:max-w-[700px] max-md:max-w-[600px] max-[32rem]:max-w-[400px] max-[27rem]:max-w-[350px]"
+              "relative flex justify-center py-[30px] px-10 max-w-[1000px] w-full backdrop-blur-[10px] rounded-[15px] border-2 border-pink-600/60 shadow-sm max-xl:max-w-[700px] max-md:max-w-[600px] max-[32rem]:max-w-[400px] max-[27rem]:max-w-[350px]"
             )}
           >
             <div className={cn("w-full flex flex-col gap-3 items-center ")}>

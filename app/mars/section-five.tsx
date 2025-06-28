@@ -53,13 +53,14 @@ function SectionFive() {
               className="w-full h-full object-cover rounded-xl"
             />
             <span
-              className="absolute top-[403px] right-[280px] max-2xl:top-[324px] max-2xl:right-[225px] text-2xl text-red-600 font-bold italic max-xl:text-lg 
+              className="absolute top-[403px] right-[280px] max-2xl:top-[324px] max-2xl:right-[225px] max-xl:text-lg 
             max-xl:top-[246px] max-xl:right-[175px] max-lg:text-sm max-lg:top-[173px] max-lg:right-[114px]
             max-md:top-[179px] max-md:right-[118px] max-sm:text-[10px] max-sm:top-[118px] max-sm:right-[78px]
             max-[25rem]:text-[8px] max-[25rem]:top-[107px] max-[25rem]:right-[73px]
             max-[26rem]:text-[8px] max-[26rem]:top-[114px] max-[26rem]:right-[80px]
             max-[24rem]:text-[7px] max-[24rem]:top-[103px] max-[24rem]:right-[70px]
-            max-[23rem]:text-[7px] max-[23rem]:top-[98px] max-[23rem]:right-[70px] opacity-80"
+            max-[23rem]:text-[7px] max-[23rem]:top-[98px] max-[23rem]:right-[70px] opacity-80 
+            text-2xl text-red-600 font-black font-serif italic antialiased"
             >
               {invite ?? ""}
             </span>
@@ -83,13 +84,14 @@ function SectionFive() {
               className="mt-3 w-full h-full object-cover rounded-xl"
             />
             <span
-              className="absolute top-[93px] left-[224px] text-2xl text-red-600 font-bold italic max-xl:text-lg 
+              className="absolute top-[93px] left-[224px] max-xl:text-lg 
             max-xl:top-[74px] max-xl:left-[168px] max-lg:text-sm max-lg:top-[54px] max-lg:left-[120px]
             max-md:top-[55px] max-md:left-[123px] max-sm:text-[10px] max-sm:top-[40px] max-sm:left-[80px] 
             max-[25rem]:text-[8px] max-[25rem]:top-[39px] max-[25rem]:left-[73px]
             max-[26rem]:text-[8px] max-[26rem]:top-[40px] max-[26rem]:left-[73px]
             max-[24rem]:text-[7px] max-[24rem]:top-[38px] max-[24rem]:left-[68px]
-            max-[23rem]:text-[7px] max-[23rem]:top-[36px] max-[23rem]:right-[68px] opacity-80"
+            max-[23rem]:text-[7px] max-[23rem]:top-[36px] max-[23rem]:right-[68px] opacity-80 
+            text-2xl text-red-600 font-black font-serif italic antialiased"
             >
               {invite ?? ""}
             </span>
