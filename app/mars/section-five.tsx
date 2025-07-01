@@ -60,7 +60,7 @@ function SectionFive() {
             max-[26rem]:text-[8px] max-[26rem]:top-[114px] max-[26rem]:right-[80px]
             max-[24rem]:text-[7px] max-[24rem]:top-[103px] max-[24rem]:right-[70px]
             max-[23rem]:text-[7px] max-[23rem]:top-[98px] max-[23rem]:right-[70px] opacity-80 
-            text-2xl text-[#0798b2] font-[1000] font-serif italic antialiased uppercase"
+            text-2xl text-[#0798b2] font-extrabold font-serif italic antialiased uppercase"
             >
               {invite ?? ""}
             </span>
@@ -91,7 +91,7 @@ function SectionFive() {
             max-[26rem]:text-[8px] max-[26rem]:top-[40px] max-[26rem]:left-[73px]
             max-[24rem]:text-[7px] max-[24rem]:top-[38px] max-[24rem]:left-[68px]
             max-[23rem]:text-[7px] max-[23rem]:top-[36px] max-[23rem]:left-[68px] opacity-80
-            text-2xl text-[#0798b2] font-[1000] font-serif italic antialiased uppercase"
+            text-2xl text-[#0798b2] font-extrabold font-serif italic antialiased uppercase"
             >
               {invite ?? ""}
             </span>
