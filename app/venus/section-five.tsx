@@ -86,11 +86,11 @@ function SectionFive() {
             <span
               className="absolute top-[93px] left-[224px] max-xl:text-lg 
             max-xl:top-[74px] max-xl:left-[168px] max-lg:text-sm max-lg:top-[54px] max-lg:left-[120px]
-            max-md:top-[55px] max-md:left-[123px] max-sm:text-[10px] max-sm:top-[40px] max-sm:left-[80px] 
-            max-[25rem]:text-[8px] max-[25rem]:top-[39px] max-[25rem]:left-[73px]
-            max-[26rem]:text-[8px] max-[26rem]:top-[40px] max-[26rem]:left-[73px]
-            max-[24rem]:text-[7px] max-[24rem]:top-[38px] max-[24rem]:left-[68px]
-            max-[23rem]:text-[7px] max-[23rem]:top-[36px] max-[23rem]:left-[68px] opacity-80
+            max-md:top-[55px] max-md:left-[123px] max-sm:text-[10px] max-sm:top-[40px] max-sm:left-[70px] 
+            max-[25rem]:text-[8px] max-[25rem]:top-[39px] max-[25rem]:left-[65px]
+            max-[26rem]:text-[8px] max-[26rem]:top-[40px] max-[26rem]:left-[66px]
+            max-[24rem]:text-[7px] max-[24rem]:top-[38px] max-[24rem]:left-[60px]
+            max-[23rem]:text-[7px] max-[23rem]:top-[36px] max-[23rem]:left-[58px] opacity-80
             text-2xl text-[#0798b2] font-[1000] font-serif italic antialiased uppercase"
             >
               {invite ?? ""}

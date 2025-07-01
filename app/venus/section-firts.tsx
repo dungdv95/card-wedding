@@ -39,7 +39,9 @@ export default function SectionFirts() {
           }}
           className="text-white text-2xl text-center font-semibold mt-10"
         >
-          THIỆP MỜI THAM DỰ LỄ THÀNH HÔN
+          THIỆP MỜI THAM DỰ LỄ
+          <br />
+          THÀNH HÔN
         </motion.span>
 
         <div className="mt-5 flex flex-col gap-6 items-center">
