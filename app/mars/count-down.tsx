@@ -16,7 +16,20 @@ export default function CountDown() {
     minutes: 0,
     seconds: 0,
   });
-  const [targetDate, setTargetDate] = useState<string>("2025-07-14T11:30");
+  // const [targetDate, setTargetDate] = useState<string>("2025-07-14T11:30");
+  const [targetDate, setTargetDate] = useState<string>(() => {
+    const now = new Date();
+
+    // tạo ngày 14/7 của năm hiện tại
+    let target = new Date(now.getFullYear(), 6, 14, 11, 30); // tháng 6 = July (0-based)
+
+    // nếu đã qua ngày 14/7 năm nay thì +1 năm
+    if (now > target) {
+      target.setFullYear(target.getFullYear() + 1);
+    }
+
+    return target.toISOString().slice(0, 16);
+  });
   const [isActive, setIsActive] = useState(true);
   //   const [isExpired, setIsExpired] = useState(false);
 
