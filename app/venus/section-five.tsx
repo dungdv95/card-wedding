@@ -1,3 +1,4 @@
+import { listImg } from "@/components/constant/constant";
 import { Heart } from "lucide-react";
 import { motion } from "motion/react";
 import Image from "next/image";
@@ -47,7 +48,7 @@ function SectionFive() {
           >
             <Image
               alt="wed"
-              src="https://drive.google.com/uc?export=view&id=1vTW83y6NXdvmb1Bz-63JzW8yLHeP5PCp"
+              src={listImg[15]}
               width={1000}
               height={1000}
               className="w-full h-full object-cover rounded-xl"
@@ -78,7 +79,7 @@ function SectionFive() {
           >
             <Image
               alt="wed"
-              src="https://drive.google.com/uc?export=view&id=1gu6gr88_SFSiNKehWKFUv6Gwl_nNmru2"
+              src={listImg[11]}
               width={1000}
               height={1000}
               className="mt-3 w-full h-full object-cover rounded-xl"

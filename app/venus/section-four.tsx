@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { motion } from "motion/react";
+import { listImg } from "@/components/constant/constant";
 
 export default function SectionFour() {
   return (
@@ -17,7 +18,7 @@ export default function SectionFour() {
         >
           <Image
             alt="wed"
-            src="https://drive.google.com/uc?export=view&id=1oegzkWzfo-VpvEZqZ3IXJNvN5JyQWtX5"
+            src={listImg[18]}
             width={1000}
             height={1000}
             className="w-full h-full object-cover rounded-xl"
@@ -37,7 +38,7 @@ export default function SectionFour() {
             >
               <Image
                 alt="wed"
-                src="https://drive.google.com/uc?export=view&id=1rAttRP167DEvjACGtDbzrP7qUEVuexMM"
+                src={listImg[16]}
                 width={1000}
                 height={1000}
                 className="w-full h-full object-cover rounded-xl"
@@ -54,7 +55,7 @@ export default function SectionFour() {
             >
               <Image
                 alt="wed"
-                src="https://drive.google.com/uc?export=view&id=1KUKcwkUlPrb8upomM3b7onJIxzahetLr"
+                src={listImg[11]}
                 width={1000}
                 height={1000}
                 className="w-full h-full object-cover rounded-xl"
@@ -73,7 +74,7 @@ export default function SectionFour() {
           >
             <Image
               alt="wed"
-              src="https://drive.google.com/uc?export=view&id=1bJBkx7np5I1uJ8pJPaKaX1ccwlxVQ-9y"
+              src={listImg[7]}
               width={1000}
               height={1000}
               className="w-full h-full object-cover rounded-xl"
@@ -93,7 +94,7 @@ export default function SectionFour() {
           >
             <Image
               alt="wed"
-              src="https://drive.google.com/uc?export=view&id=1CkOr5Ml3AnBRFcTvxg1Ckeq1mgk27m8J"
+              src={listImg[17]}
               width={1000}
               height={1000}
               className="w-full h-full object-cover rounded-xl"
@@ -113,7 +114,7 @@ export default function SectionFour() {
           >
             <Image
               alt="wed"
-              src="https://drive.google.com/uc?export=view&id=1h9wbif2e6td-vhDYqBd7JXRxk8tN4qr_"
+              src={listImg[13]}
               width={1000}
               height={1000}
               className="w-full h-full object-cover rounded-xl"
@@ -133,7 +134,7 @@ export default function SectionFour() {
           >
             <Image
               alt="wed"
-              src="https://drive.google.com/uc?export=view&id=1AslUpPESXoTaNDnTdP2rPF93aOT52ram"
+              src={listImg[14]}
               width={1000}
               height={1000}
               className="w-full h-full object-cover rounded-xl"
@@ -154,7 +155,7 @@ export default function SectionFour() {
             >
               <Image
                 alt="wed"
-                src="https://drive.google.com/uc?export=view&id=1cLIz-dgzDw71W3KMCcbhyGnGckpuM2TE"
+                src={listImg[1]}
                 width={1000}
                 height={1000}
                 className="w-full h-full object-cover rounded-xl"

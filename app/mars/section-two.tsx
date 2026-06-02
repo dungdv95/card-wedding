@@ -10,6 +10,7 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import { cn } from "@/lib/utils";
+import { listImg } from "@/components/constant/constant";
 
 const listVideo = [
   "https://www.youtube.com/embed/hwpYy_SFt3I",
@@ -128,14 +129,14 @@ export default function SectionTwo() {
         >
           <Image
             alt=""
-            src="https://drive.google.com/uc?export=view&id=1jGBEp5Sg0L7MH82xp4SiEtbvwMTsqiOb"
+            src={listImg[0]}
             width={500}
             height={600}
             className="rounded-md"
           />
           <Image
             alt=""
-            src="https://drive.google.com/uc?export=view&id=1NsZihDzCnQHQgVPgNbfrJRam28eYrNCI"
+            src={listImg[9]}
             width={300}
             height={600}
             className="absolute rounded-md bottom-[-20px] right-[-250px] max-lg:w-[190px] max-lg:right-[-150px] max-md:right-4 max-md:bottom-[-40px]"
