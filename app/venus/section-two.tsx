@@ -60,7 +60,7 @@ export default function SectionTwo() {
         <span className=" text-xl text-center">A journey of love spanning</span>
         <div className="flex items-end gap-1">
           <span className="not-italic text-3xl leading-[28px] font-black font-mono text-pink-600">
-            2.680
+            {getDayLove()}
           </span>{" "}
           days
         </div>
@@ -99,7 +99,7 @@ export default function SectionTwo() {
               variant={"destructive"}
               className={cn(
                 "h-6 w-6 text-xs rounded-full p-0",
-                index === current - 1 ? "bg-[#005FEB]" : "bg-[#A7ABC3]"
+                index === current - 1 ? "bg-[#005FEB]" : "bg-[#A7ABC3]",
               )}
               onClick={() => api?.scrollTo(index)}
             >
@@ -196,3 +196,15 @@ export default function SectionTwo() {
     </section>
   );
 }
+
+const getDayLove = (): string => {
+  const start = new Date(2018, 1, 25);
+  const today = new Date();
+
+  start.setHours(0, 0, 0, 0);
+  today.setHours(0, 0, 0, 0);
+
+  const days = Math.floor((today.getTime() - start.getTime()) / 86400000);
+
+  return new Intl.NumberFormat("vi-VN").format(days);
+};
