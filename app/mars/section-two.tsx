@@ -74,6 +74,24 @@ export default function SectionTwo() {
           duration: 0.5,
           ease: "easeInOut",
         }}
+        className="mb-2 flex flex-col items-center text-white gap-0.5 italic"
+      >
+        <span className=" text-xl text-center">A journey of married life</span>
+        <div className="flex items-end gap-1">
+          <span className="not-italic text-3xl leading-[28px] font-black font-mono text-emerald-600">
+            {getDayWedding()}
+          </span>{" "}
+          days
+        </div>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0.0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.3,
+          duration: 0.5,
+          ease: "easeInOut",
+        }}
         className="flex flex-col items-center"
       >
         <Carousel
@@ -200,6 +218,18 @@ export default function SectionTwo() {
 
 const getDayLove = (): string => {
   const start = new Date(2018, 1, 25);
+  const today = new Date();
+
+  start.setHours(0, 0, 0, 0);
+  today.setHours(0, 0, 0, 0);
+
+  const days = Math.floor((today.getTime() - start.getTime()) / 86400000);
+
+  return new Intl.NumberFormat("vi-VN").format(days);
+};
+
+const getDayWedding = (): string => {
+  const start = new Date(2025, 7, 14);
   const today = new Date();
 
   start.setHours(0, 0, 0, 0);
